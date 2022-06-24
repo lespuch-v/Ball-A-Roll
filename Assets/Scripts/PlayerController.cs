@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    private int count;
     private Rigidbody rb;
     private float movementX;
     private float movementY;
@@ -13,8 +12,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         // Assign the Rigidbody component to our private rb variable
-        // Set the count to zero 
-        count = 0;
         rb = GetComponent<Rigidbody>();
 
     }
