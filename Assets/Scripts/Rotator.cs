@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Rotator : MonoBehaviour
 {
+    public int randomNumber;
+    private void Start()
+    {
+        randomNumber = Random.Range(0, 100);
+    }
     void Update()
     {
-        transform.Rotate(new Vector3(15, 30, 45) * Time.deltaTime);
+        transform.Rotate(new Vector3(randomNumber, randomNumber, randomNumber) * Time.deltaTime);
     }
 }
